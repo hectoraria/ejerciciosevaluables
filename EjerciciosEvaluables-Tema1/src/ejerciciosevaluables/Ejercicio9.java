@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class Ejercicio9 {
     public static void main(String[] args) {
-    	//Defino variable del numero 1 y 2
+    	//Defino variable del numero1 como es entero int
     	int numero1 ;
+        //Defino variable del numero2 como es entero int
     	int numero2 ;
     	//Defino un boleano
     	boolean sonIguales ;
@@ -17,7 +18,7 @@ public class Ejercicio9 {
         numero1 = scanner.nextInt();
         //Imprime el mensaje para que ingrese el numero 2
         System.out.print("Ingrese el segundo número: ");
-        //Recoge el mensaje en la variable numero1
+        //Recoge el mensaje en la variable numero2
         numero2 = scanner.nextInt();
         //Definicion de la funcion de sonInguales
         sonIguales = (numero1 == numero2);
