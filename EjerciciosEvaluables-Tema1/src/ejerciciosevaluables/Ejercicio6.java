@@ -22,6 +22,7 @@ public class Ejercicio7 {
 		minutos = segundos%60;
 		//Calcular la funcion de las horas
 		horas = segundos%3600;
+		//Calcular la funcion que te muestre los segundos
 		//Resultado impreso
 		System.out.println("La cantidad de horas es " + horas +" de minutos "+ minutos+ " y de segundos "+ segundos);
 		
