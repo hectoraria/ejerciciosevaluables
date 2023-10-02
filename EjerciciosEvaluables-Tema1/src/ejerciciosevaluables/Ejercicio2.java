@@ -3,25 +3,25 @@ package ejerciciosevaluables;
 import java.util.Scanner;
 
 public class Ejercicio2 {
+    public static void main(String[] args) {
+    	//Declaro la variables de numero, resto y cantidadASumar
+    	int numero;
+    	int resto;
+    	int cantidadASumar;
+	//Inicia scanner
+        Scanner scanner = new Scanner(System.in);
+    //Imprimo un mensaje para que introduzca el número
+        System.out.print("Ingresa un número entero: ");
+    //Recogo el numero introducido en numero
+        numero = scanner.nextInt();
+    //Funcion para tener el resto
+        resto = numero % 7;
+    //Ternario que se recoge en la variable de cantidaASumar
+        cantidadASumar = (resto != 0) ? 7 - resto : 0;
 
-	public static void main(String[] args) {
-		// Defino la variable del numero entero
-		float num;
-		//Variable resto para poder almacenar el resto del numero si no es multiplo
-		float resto;
-		//Incio escaner
-		Scanner sc = new Scanner(System.in);
-		//Imprimo el mensaje para que introzca el numero
-		System.out.println("Introduce un numero: ");
-		//Recoga el numero introducido en la variable de numero
-		num = sc.nextFloat();
-		//Funcion para ver si es multiplo de siete
-		resto = num<=7 ? 7%num : num%7 ;
-		//Imprimo el resultado para recoge en la consola que es multiplo
-		System.out.println("A "+ num + " hay que sumarle "+ resto + " para que sea multiplo de 7");
-		//Cierro escaner
-		sc.close();
+        System.out.println("Hay que sumarle " + cantidadASumar + " para que sea múltiplo de 7.");
 
-	}
-
+	//Cierra escanner
+        scanner.close();
+    }
 }
