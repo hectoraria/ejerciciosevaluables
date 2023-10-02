@@ -19,10 +19,11 @@ public class Ejercicio7 {
 		//Recogo la cantidad en segundos
 		segundos =sc.nextInt();
 		//Calcular la funcion de minutos
-		minutos = segundos%60;
+		minutos = segundos%3600/60;
 		//Calcular la funcion de las horas
-		horas = segundos%3600;
-		//Calcular la funcion que te muestre los segundos
+		horas = segundos/3600;
+		//Calcular la funcion de los segundos
+		segundos = horas%3600&60;
 		//Resultado impreso
 		System.out.println("La cantidad de horas es " + horas +" de minutos "+ minutos+ " y de segundos "+ segundos);
 		
