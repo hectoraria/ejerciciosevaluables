@@ -10,15 +10,15 @@ public class Ejercicio2 {
     	int cantidadASumar;
 	//Inicia scanner
         Scanner scanner = new Scanner(System.in);
-    //Imprimo un mensaje para que introduzca el número
+    	//Imprimo un mensaje para que introduzca el número
         System.out.print("Ingresa un número entero: ");
-    //Recogo el numero introducido en numero
+    	//Recogo el numero introducido en numero
         numero = scanner.nextInt();
-    //Funcion para tener el resto
+    	//Funcion para tener el resto
         resto = numero % 7;
-    //Ternario que se recoge en la variable de cantidaASumar
+    	//Ternario que se recoge en la variable de cantidaASumar
         cantidadASumar = (resto != 0) ? 7 - resto : 0;
-
+	//Imprime el resultado que hay que sumarle para que sea multiplo de 7
         System.out.println("Hay que sumarle " + cantidadASumar + " para que sea múltiplo de 7.");
 
 	//Cierra escanner
